@@ -86,22 +86,22 @@ function App() {
       <header className="App-header">
         <h1>Sensor test</h1>
         <h2>Orientation</h2>
-        <span>alpha: {alpha}</span>
-        <span>gamma: {gamma}</span>
-        <span>beta: {beta}</span>
+        <div>alpha: {alpha}</div>
+        <div>gamma: {gamma}</div>
+        <div>beta: {beta}</div>
         <h2>Accelerometer</h2>
-        <span>x: {Accelerometer_x}</span>
-        <span>y: {Accelerometer_y}</span>
-        <span>z: {Accelerometer_z}</span>
-        <span>Data interval: {Accelerometer_i}</span>
+        <div>x: {Accelerometer_x}</div>
+        <div>y: {Accelerometer_y}</div>
+        <div>z: {Accelerometer_z}</div>
+        <div>Data interval: {Accelerometer_i}</div>
         <h2>Accelerometer including gravity</h2>
-        <span>x: {Accelerometer_gx}</span>
-        <span>y: {Accelerometer_gy}</span>
-        <span>z: {Accelerometer_gz}</span>
+        <div>x: {Accelerometer_gx}</div>
+        <div>y: {Accelerometer_gy}</div>
+        <div>z: {Accelerometer_gz}</div>
         <h2>Gyroscope</h2>
-        <span>x: {Gyroscope_x}</span>
-        <span>y: {Gyroscope_y}</span>
-        <span>z: {Gyroscope_z}</span>
+        <div>x: {Gyroscope_x}</div>
+        <div>y: {Gyroscope_y}</div>
+        <div>z: {Gyroscope_z}</div>
         <button onClick={requestPermission}>Aktiválás</button>
         <h2>ehh</h2>
         <img src={logo} alt=""/>

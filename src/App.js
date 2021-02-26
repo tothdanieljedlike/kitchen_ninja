@@ -84,24 +84,25 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Orientation</h1>
-        <h2>alpha: {alpha}</h2>
-        <h2>gamma: {gamma}</h2>
-        <h2>beta: {beta}</h2>
-        <h1>Accelerometer</h1>
-        <h2>x: {Accelerometer_x}</h2>
-        <h2>y: {Accelerometer_y}</h2>
-        <h2>z: {Accelerometer_z}</h2>
-        <h2>Data interval: {Accelerometer_i}</h2>
-        <h1>Accelerometer including gravity</h1>
-        <h2>x: {Accelerometer_gx}</h2>
-        <h2>y: {Accelerometer_gy}</h2>
-        <h2>z: {Accelerometer_gz}</h2>
-        <h1>Gyroscope</h1>
-        <h2>x: {Gyroscope_x}</h2>
-        <h2>y: {Gyroscope_y}</h2>
-        <h2>z: {Gyroscope_z}</h2>
-        <button onClick={requestPermission}>Gyerunk</button>
+        <h1>Sensor test</h1>
+        <h2>Orientation</h2>
+        <span>alpha: {alpha}</span>
+        <span>gamma: {gamma}</span>
+        <span>beta: {beta}</span>
+        <h2>Accelerometer</h2>
+        <span>x: {Accelerometer_x}</span>
+        <span>y: {Accelerometer_y}</span>
+        <span>z: {Accelerometer_z}</span>
+        <span>Data interval: {Accelerometer_i}</span>
+        <h2>Accelerometer including gravity</h2>
+        <span>x: {Accelerometer_gx}</span>
+        <span>y: {Accelerometer_gy}</span>
+        <span>z: {Accelerometer_gz}</span>
+        <h2>Gyroscope</h2>
+        <span>x: {Gyroscope_x}</span>
+        <span>y: {Gyroscope_y}</span>
+        <span>z: {Gyroscope_z}</span>
+        <button onClick={requestPermission}>Aktiválás</button>
         <h2>ehh</h2>
         <img src={logo} alt=""/>
       </header>

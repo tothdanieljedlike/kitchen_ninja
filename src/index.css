@@ -7,11 +7,13 @@
 .ball {
     width: 10px;
     height: 10px;
-    background-color: rgb(21, 21, 158);
+    background-color: rgb(21, 158, 44);
     position: relative;
     
 }
 
 body {
     min-height: 100vh;
+    background-color: rgb(25, 27, 29);
+    color: rgb(192, 192, 192);
 }

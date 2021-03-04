@@ -2,6 +2,9 @@
 import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Sensors from './Sensors';
+import Ball from './Ball';
+
 
 function App() {
   const [{ Accelerometer_gx,
@@ -99,27 +102,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Sensor test</h1>
-        <h2>Orientation</h2>
-        <div>alpha: {alpha}</div>
-        <div>gamma: {gamma}</div>
-        <div>beta: {beta}</div>
-        <h2>Accelerometer</h2>
-        <div>x: {Accelerometer_x}</div>
-        <div>y: {Accelerometer_y}</div>
-        <div>z: {Accelerometer_z}</div>
-        <div>Data interval: {Accelerometer_i}</div>
-        <h2>Accelerometer including gravity</h2>
-        <div>x: {Accelerometer_gx}</div>
-        <div>y: {Accelerometer_gy}</div>
-        <div>z: {Accelerometer_gz}</div>
-        <h2>Gyroscope</h2>
-        <div>x: {Gyroscope_x}</div>
-        <div>y: {Gyroscope_y}</div>
-        <div>z: {Gyroscope_z}</div>
+         {/* <Sensors Accelerometer_gx={Accelerometer_gx} Accelerometer_gy={Accelerometer_gy} Accelerometer_gz={Accelerometer_gz} Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} Accelerometer_i={Accelerometer_i}
+        Gyroscope_z={Gyroscope_z} Gyroscope_x={Gyroscope_x} Gyroscope_y={Gyroscope_y} alpha={alpha} gamma={gamma} beta={beta} />  */}
         <button onClick={requestPermission}>kutya</button>
         <h2>ehh</h2>
-        <img src={logo} alt=""/>
+        {/* <img src={logo} alt=""/> */}
+        <Ball Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} alpha={alpha} beta={beta} gamma={gamma}/>
       </header>
     </div>
   );

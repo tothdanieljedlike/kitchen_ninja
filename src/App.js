@@ -97,7 +97,7 @@ function App() {
 }, []);
 
     
- 
+requestPermission();
   return (
     <div className="App">
       <header className="App-header">

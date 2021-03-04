@@ -1,13 +1,19 @@
-import React from 'react'
+import React from 'react';
 
 function Ball(props) {
 
-    let x = window.innerWidth/2;
-    let y = window.innerHeight/2;
+    let x = null;
+    let y = null;
+         
+    x = window.innerWidth/2;
+    y = window.innerHeight/2;
 
-    x = x + props.Accelerometer_x*5;
-    y = y + props.Accelerometer_y*5;
-    
+
+    x =+ 100 + props.alpha*5;
+    y =+ 100 + props.beta*5;
+        
+
+
     const ballStyle = {
         top: y,
         left: x

@@ -11,8 +11,8 @@ function Ball(props) {
         const handleMotionEvent = event => {
             let a = cord.x;
             let b = cord.y;
-            a += props.Accelerometer_x*5;
-            b += props.Accelerometer_y*5;
+            a += event.acceleration.x*5;
+            b += event.acceleration.y*5;
             setcord({x: a, y: b});
         };
         window.addEventListener('devicemotion', handleMotionEvent, true);

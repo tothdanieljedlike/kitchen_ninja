@@ -17,7 +17,7 @@ function Ball(props) {
         };
         window.addEventListener('devicemotion', handleMotionEvent, true);
         return () => window.removeEventListener('devicemotion', handleMotionEvent);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
     
     
     // const inputTextHandler = (e) => {

@@ -3,11 +3,26 @@ import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
 function App() {
-  const [{ Accelerometer_gx, Accelerometer_gy, Accelerometer_gz,
-    Accelerometer_x, Accelerometer_y, Accelerometer_z, Accelerometer_i, Gyroscope_z, Gyroscope_x, Gyroscope_y}, setMotion] = useState({ Accelerometer_gx: 0, Accelerometer_gy: 0, Accelerometer_gz: 0, Accelerometer_x: 0, Accelerometer_y: 0, Accelerometer_z:0,
-                                                                                                                                      Accelerometer_i: 0, Gyroscope_x: 0, Gyroscope_y: 0, Gyroscope_z: 0});
+  const [{ Accelerometer_gx,
+     Accelerometer_gy,
+     Accelerometer_gz,
+     Accelerometer_x,
+     Accelerometer_y,
+     Accelerometer_z,
+     Accelerometer_i,
+     Gyroscope_z,
+     Gyroscope_x,
+     Gyroscope_y}, setMotion] = useState({ Accelerometer_gx: 0,
+      Accelerometer_gy: 0, 
+      Accelerometer_gz: 0, 
+      Accelerometer_x: 0, 
+      Accelerometer_y: 0, 
+      Accelerometer_z:0, 
+      Accelerometer_i: 0, 
+      Gyroscope_x: 0, 
+      Gyroscope_y: 0, 
+      Gyroscope_z: 0});
   const [{alpha, gamma, beta}, setOrientation] = useState({alpha: 0, gamma: 0, beta: 0})
   
 
@@ -102,7 +117,7 @@ function App() {
         <div>x: {Gyroscope_x}</div>
         <div>y: {Gyroscope_y}</div>
         <div>z: {Gyroscope_z}</div>
-        <button onClick={requestPermission}>Aktiválás</button>
+        <button onClick={requestPermission}>kutya</button>
         <h2>ehh</h2>
         <img src={logo} alt=""/>
       </header>

@@ -1,4 +1,5 @@
 // eslint-disable-next-line
+/*eslint no-unused-vars: */
 import React, {useEffect, useState} from 'react';
 import './App.css';
 import Sensors from './Sensors';
@@ -6,6 +7,7 @@ import Ball from './Ball';
 
 
 function App() {
+
   const [{ Accelerometer_gx,
      Accelerometer_gy,
      Accelerometer_gz,
@@ -104,8 +106,8 @@ requestPermission();
         
         <button onClick={requestPermission}>kutya</button>
         <Ball Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} alpha={alpha} beta={beta} gamma={gamma}/>
-        <Sensors Accelerometer_gx={Accelerometer_gx} Accelerometer_gy={Accelerometer_gy} Accelerometer_gz={Accelerometer_gz} Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} Accelerometer_i={Accelerometer_i}
-        Gyroscope_z={Gyroscope_z} Gyroscope_x={Gyroscope_x} Gyroscope_y={Gyroscope_y} alpha={alpha} gamma={gamma} beta={beta} />
+        {/* <Sensors Accelerometer_gx={Accelerometer_gx} Accelerometer_gy={Accelerometer_gy} Accelerometer_gz={Accelerometer_gz} Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} Accelerometer_i={Accelerometer_i}
+        Gyroscope_z={Gyroscope_z} Gyroscope_x={Gyroscope_x} Gyroscope_y={Gyroscope_y} alpha={alpha} gamma={gamma} beta={beta} /> */}
       </header>
     </div>
   );

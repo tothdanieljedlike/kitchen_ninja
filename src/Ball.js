@@ -9,8 +9,8 @@ function Ball(props) {
     y = window.innerHeight/2;
 
 
-    x =+ 100 + props.alpha*5;
-    y =+ 100 + props.beta*5;
+    x =+ 100 + props.Accelerometer_x*5;
+    y =+ 100 + props.Accelerometer_y*5;
         
 
 

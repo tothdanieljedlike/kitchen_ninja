@@ -1,6 +1,5 @@
 // eslint-disable-next-line
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Sensors from './Sensors';
 import Ball from './Ball';
@@ -102,12 +101,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-         {/* <Sensors Accelerometer_gx={Accelerometer_gx} Accelerometer_gy={Accelerometer_gy} Accelerometer_gz={Accelerometer_gz} Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} Accelerometer_i={Accelerometer_i}
-        Gyroscope_z={Gyroscope_z} Gyroscope_x={Gyroscope_x} Gyroscope_y={Gyroscope_y} alpha={alpha} gamma={gamma} beta={beta} />  */}
+        
         <button onClick={requestPermission}>kutya</button>
-        <h2>ehh</h2>
-        {/* <img src={logo} alt=""/> */}
         <Ball Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} alpha={alpha} beta={beta} gamma={gamma}/>
+        <Sensors Accelerometer_gx={Accelerometer_gx} Accelerometer_gy={Accelerometer_gy} Accelerometer_gz={Accelerometer_gz} Accelerometer_x={Accelerometer_x} Accelerometer_y={Accelerometer_y} Accelerometer_z={Accelerometer_z} Accelerometer_i={Accelerometer_i}
+        Gyroscope_z={Gyroscope_z} Gyroscope_x={Gyroscope_x} Gyroscope_y={Gyroscope_y} alpha={alpha} gamma={gamma} beta={beta} />
       </header>
     </div>
   );

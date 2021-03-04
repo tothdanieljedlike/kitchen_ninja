@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 
 function Ball(props) {
-    const [{x,y}, setlocation] = useState({y: window.innerHeight/2, x: window.innerWidth/2})
-    
+    const [{x,y}] = useState({y: window.innerHeight/2, x: window.innerWidth/2})
     let new_y = y + props.Accelerometer_y*5;
     let new_x = x + props.Accelerometer_x*5;
     

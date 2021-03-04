@@ -1,16 +1,16 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function Ball(props) {
-    const [{x,y}] = useState({y: window.innerHeight/2, x: window.innerWidth/2})
-    let new_y = y + props.Accelerometer_y*5;
-    let new_x = x + props.Accelerometer_x*5;
+
+    let x = window.innerWidth/2;
+    let y = window.innerHeight/2;
+
+    x = x + props.Accelerometer_x*5;
+    y = y + props.Accelerometer_y*5;
     
-    console.log(new_x);
-    
-    console.log(window.innerHeight)
     const ballStyle = {
-        top: new_y,
-        left: new_x
+        top: y,
+        left: x
     }
     
 

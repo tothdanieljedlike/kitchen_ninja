@@ -43,6 +43,7 @@ function Ball(props) {
 
     return(
         <div>
+            <div>x: {cord.x}, y: {cord.y}</div>
             <form >
                 {/* <input onChange={inputTextHandler} type="text"/>
                 <button onClick={submitHandler} type="submit"></button> */}

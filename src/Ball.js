@@ -7,8 +7,6 @@ function Ball(props) {
     let x = cord.x;
     let y = cord.y;
 
-    
-
      useEffect(() => {
         
         const handleMotionEvent = event => {

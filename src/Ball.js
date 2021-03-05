@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 function Ball(props) {
     // const [test, settest] = useState(0)
-    const [cord, setcord] = useState({x: 0, y: 0})
+    const [cord, setcord] = useState({x: window.innerWidth/2, y: window.innerHeight/2})
 
     let x = cord.x;
     let y = cord.y;
@@ -10,13 +10,13 @@ function Ball(props) {
     
 
      useEffect(() => {
-        let a = cord.x;
-        let b = cord.y;
+        
         const handleMotionEvent = event => {
-             
-             a += parseInt(event.acceleration.x*5);
-             b += parseInt(event.acceleration.y*5);
-             setcord({x: a, y: b});
+            let a = cord.x;
+            let b = cord.y;
+            a += parseInt(event.acceleration.x*5);
+            b += parseInt(event.acceleration.y*5);
+            setcord({x: a, y: b});
          };
          
          window.addEventListener('devicemotion', handleMotionEvent, true);
